@@ -13,8 +13,11 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IProductService, ProductManager>();
+builder.Services.AddScoped<ICategoryService, CategoryManager>();
+
 var connectionString = builder.Configuration.GetConnectionString("Default");
-builder.Services.AddDbContext<ProductApiDbContext>(options => options.UseMySql(connectionString,
+builder.Services.AddDbContext<ProductApiDbContext>(options =>
+        options.UseMySql(connectionString,
         ServerVersion.AutoDetect(connectionString)));
 
 var app = builder.Build();

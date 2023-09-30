@@ -26,11 +26,13 @@
     <None Remove="Business\" />
     <None Remove="Business\Interfaces\" />
     <None Remove="Dto\" />
+    <None Remove="Entity\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Entity\" />
     <Folder Include="Business\" />
     <Folder Include="Business\Interfaces\" />
     <Folder Include="Dto\" />
+    <Folder Include="Entity\Models\" />
   </ItemGroup>
 </Project>

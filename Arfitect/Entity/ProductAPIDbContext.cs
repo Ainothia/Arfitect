@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection.Metadata;
 using Microsoft.EntityFrameworkCore;
 
 namespace Product.API.Entity
