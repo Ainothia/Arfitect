@@ -1,11 +1,16 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Product.API.Entity
 {
 	public class Category
 	{
-		public int Id { get; set; }
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        public int Id { get; set; }
 		public string Title { get; set; }
-		public int StockQuantity { get; set; }
+        [Range(0, Int32.MaxValue)]
+        public int StockQuantity { get; set; }
 	}
 }
-

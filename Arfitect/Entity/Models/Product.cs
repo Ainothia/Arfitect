@@ -1,13 +1,9 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Reflection.Emit;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Product.API.Entity
 {
-	public class Product
+    public class Product
 	{
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -20,6 +16,7 @@ namespace Product.API.Entity
 		[Required]
 		public int CategoryId { get; set; }
 		public virtual Category Category { get; set; }
+		[Range(0,Int32.MaxValue)]
         public int StockQuantity { get; set; }
     }
 }

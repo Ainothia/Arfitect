@@ -5,7 +5,7 @@ using Product.API.Dto;
 namespace Product.API.Controllers
 {
     [ApiController]
-    [Route("/product")]
+    [Route("/category")]
     public class CategoryController : Controller
 	{
         private ICategoryService _categoryService;
