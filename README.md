@@ -1,7 +1,7 @@
 Developer Case Study
 
 Problem Statement:
-We would like to create an e-commerce merchandising management system for Arfitect.
+We would like to create an e-commerce merchandising management system.
 Our main goal is to create a business flow for CRUD transactions in our "Product" domain.
 We expect you to use ASP.Net Core. We prefer to have rest end points to support our business.
 
